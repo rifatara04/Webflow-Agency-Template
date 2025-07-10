@@ -1,0 +1,548 @@
+/* Base styles and typography */
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    overflow-x: hidden; /* Helps prevent horizontal scrollbar from fixed width elements */
+}
+
+/* Header Section */
+.header {
+    width: 1440px; /* Fixed width as requested */
+    height: 698px; /* Fixed height as requested */
+    margin: 0 auto; /* Center the fixed-width header */
+    background-image: url('assets/Hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0; /* Adjust padding as needed */
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; /* Needed for pseudo-element positioning */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 0 150px; /* Adjusted padding to simulate original fixed margins */
+}
+
+.logo {
+    font-family: 'Inter', sans-serif;
+    /* margin-left: 150px; No longer needed with navbar padding */
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #6633ff;
+}
+
+.signup-button {
+    /* margin-right: 150px; No longer needed with navbar padding */
+    margin-top: 40px;
+    background-color: #6633ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #5522ee;
+}
+
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-left: 20px; /* Added padding for content within the fixed width */
+    padding-right: 20px; /* Added padding for content within the fixed width */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: #333;
+    max-width: 800px; /* Still good to limit heading width for readability */
+}
+
+.stay-focused-button {
+    background-color: #6633ff;
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.stay-focused-button:hover {
+    background-color: #5522ee;
+}
+
+/* For the background pattern */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/Hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Call to Action / Demo Section (action.png) */
+.action-section {
+    background-color: #f8f8f8;
+    padding: 96px 20px; /* Horizontal padding for responsiveness */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 1140px;
+    height: 328px;
+    margin-right: 141px;
+    margin-left: 159px;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+}
+
+.action-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 512px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.action-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 24px;
+}
+
+.action-content p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #4b5563;
+    line-height: 1.625;
+    margin-bottom: 40px;
+}
+
+.action-launch-btn {
+    background-color: #7c3aed;
+    color: white;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+}
+
+.action-launch-btn:hover {
+    background-color: #6d28d9;
+}
+
+.action-image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.action-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* Productive Users Section (productive_user.png) */
+.stats-section {
+    background-color: #f8f8f8;
+    padding: 96px 20px; /* Horizontal padding for responsiveness */
+    text-align: center;
+}
+
+.stats-container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    padding: 48px;
+    max-width: 896px;
+    margin: 0 auto;
+}
+
+.stats-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 40px;
+}
+
+.stats-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+}
+
+.stat-item .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #7c3aed;
+    margin-bottom: 8px;
+}
+
+.stat-item .stat-label {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+/* Testimonials Section (review.png) */
+.reviews-section {
+    background-color: #f8f8f8;
+    padding: 96px 20px; /* Horizontal padding for responsiveness */
+    text-align: center;
+    margin-left: 151px;
+    margin-right: 149px;
+}
+
+.reviews-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 64px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.review-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    padding: 24px 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-card .stars {
+    margin-bottom: 16px;
+}
+
+.review-card .star-filled {
+    color: #ffc107;
+    font-size: 24px;
+}
+
+.review-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 12px;
+}
+
+.review-card p {
+    color: #4b5563;
+    line-height: 1.625;
+    margin-bottom: 24px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.reviewer-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    margin-right: 16px;
+    object-fit: cover;
+}
+
+.reviewer-info .reviewer-name {
+    font-weight: bold;
+    color: #374151;
+}
+
+.reviewer-info .review-date {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+
+
+.focus-section {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    text-align: center; /* This centers inline content and text */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 697px;
+    width: 1140px;
+    max-width: 900px; /* Adjust as needed */
+    width: 100%;
+    margin: 50px auto; /* This centers the .focus-section itself */
+}
+
+h1 {
+    font-size: 3em; /* Adjust font size */
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #6f42c1; /* A purple color for the button */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px; /* Space between button and image */
+}
+
+button:hover {
+    background-color: #5a36a0; /* Darker shade on hover */
+}
+
+.image-wrapper {
+    width: 100%;
+    /* The image itself has a border-radius and shadow in the original design.
+       You might need to apply these to the img tag directly or ensure the image
+       asset itself has these characteristics, or use more advanced CSS.
+       For simplicity, we'll just center it and give it some basic styling. */
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+    margin: 0 auto; /* Center the image */
+    border-radius: 15px; /* Adjust to match the image's rounded corners */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Shadow for the image */
+}
+
+/* Contact/Newsletter Section (newsletter.png) */
+.contact-section {
+    background-color: #f8f8f8;
+    padding: 96px 20px; /* Horizontal padding for responsiveness */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.contact-text {
+    flex: 1;
+    height: 528px;
+    /* width: 323px; */
+    min-width: 300px;
+    max-width: 700px;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.contact-text h2 {
+    font-size: 97px;
+    font-weight: bold;
+    color: #374151;
+    line-height: 1.1;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 512px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    height: 490px;
+    width: 497px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #4b5563;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #374151;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.5);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-submit-btn {
+    background-color: #7c3aed;
+    color: white;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+}
+
+.contact-submit-btn:hover {
+    background-color: #6d28d9;
+}
+
+/* Footer Section */
+.footer-section {
+    width: 1440px; /* Fixed width as requested */
+    height: 428px; /* Fixed height as requested */
+    margin: 0 auto; /* Center the fixed-width footer */
+    background-color: white;
+    padding: 80px 0; /* Vertical padding, horizontal handled by max-width and internal padding */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 100px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #4A5FF2;
+    margin-bottom: 32px;
+}
+
+.footer-cta {
+    margin-right: 100px;
+    color: #333333;
+    line-height: 1.625;
+    max-width: 672px;
+    /* margin: 0 auto 48px auto; */
+    /* Centered with bottom margin */
+    padding: 0 16px; /* Horizontal padding for content within the fixed width */
+    font-size: 18px;
+}
+
+.footer-nav {
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer-nav a {
+    color: #666666;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #7c3aed;
+}
