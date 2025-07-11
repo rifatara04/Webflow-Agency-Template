@@ -55,7 +55,7 @@ body {
 .logo {
     font-family: 'Inter', sans-serif;
     /* margin-left: 150px; No longer needed with navbar padding */
-    margin-top: 5px;
+    margin-top: 4px;
     font-size: 24px;
     font-weight: 800;
     color: #461fbd;
@@ -149,11 +149,12 @@ body {
     align-items: center;
     gap: 80px;
     /* width: 1140px; */
-    height: 328px;
+    height: 200px;
     margin-right: 141px;
     margin-left: 159px;
     /* max-width: 1280px; */
     margin: 0 auto;
+    margin-top: 70px;
 }
 
 .action-content {
@@ -162,13 +163,14 @@ body {
     max-width: 512px;
     text-align: left;
     margin-left: 50px;
+    margin-top: 40px;
 }
 
 .action-content h2 {
     font-size: 42px;
     font-weight: bold;
     color: #252432;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 }
 
 .action-content p {
@@ -176,7 +178,7 @@ body {
     font-weight: 400;
     color: #4b5563;
     line-height: 1.625;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .action-launch-btn {
@@ -217,7 +219,7 @@ body {
     border-radius: 16px;
 }
 
-/* Productive Users Section (productive_user.png) */
+/* Productive Users Section */
 .stats-section {
     background-color: #f8f8f8;
     padding: 96px 20px; /* Horizontal padding for responsiveness */
@@ -349,22 +351,26 @@ body {
     color: #4b5563;
 }
 
+
+
+/* Focus Section */
+
 .focus-section {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 60px 40px;
     text-align: center; /* This centers inline content and text */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    height: 697px;
+    height: 600px;
     /* width: 1140px; */
     max-width: 900px; /* Adjust as needed */
     width: 100%;
-    margin: 50px auto; /* This centers the .focus-section itself */
+    margin: 30px auto; /* This centers the .focus-section itself */
 }
 
 h1 {
     font-weight: bold;
-    font-size: 50px; /* Adjust font size */
+    font-size: 40px; /* Adjust font size */
     color: #252432;
     margin-bottom: 15px;
     line-height: 1.2;
@@ -419,6 +425,7 @@ button:hover {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Shadow for the image */
 }
 
+
 /* Contact/Newsletter Section (newsletter.png) */
 .contact-section {
     background-color: #f8f8f8;
@@ -439,10 +446,11 @@ button:hover {
     min-width: 300px;
     max-width: 700px;
     text-align: left;
-    margin-left: 150px;
+    margin-left: 180px;
 }
 
 .contact-text h2 {
+    margin-top: 150px;
     font-size: 60px;
     font-weight: bold;
     color: #252432;
@@ -454,9 +462,9 @@ button:hover {
     margin-right: 150px;
     min-width: 300px;
     max-width: 512px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    /* border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); */
     padding: 40px;
     height: 490px;
     /* width: 497px; */
@@ -515,13 +523,12 @@ button:hover {
 .contact-submit-btn:hover {
     color: #461fbd;
     background-image: linear-gradient(to right, #4fa4a7, #0f6666);
-    /* background-color: #6d28d9; */
 }
 
 /* Footer Section */
 .footer-section {
     /* width: 1440px; /* Fixed width as requested */
-    height: 428px; /* Fixed height as requested */
+    height: 200px; /* Fixed height as requested */
     margin: 0 auto; /* Center the fixed-width footer */
     background-color: powderblue;
     padding: 80px 0; /* Vertical padding, horizontal handled by max-width and internal padding */
@@ -533,11 +540,12 @@ button:hover {
 }
 
 .footer-logo {
+    margin-top: 50px;
     text-align: center;
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 900;
     color: #461fbd;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .footer-cta {
