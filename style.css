@@ -58,13 +58,14 @@ body {
     margin-top: 5px;
     font-size: 24px;
     font-weight: 800;
-    color: #6633ff;
+    color: #461fbd;
 }
 
 .signup-button {
     /* margin-right: 150px; No longer needed with navbar padding */
     margin-top: 40px;
-    background-color: #6633ff;
+    background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
+    /* background-color: #461fbd; */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -76,7 +77,9 @@ body {
 }
 
 .signup-button:hover {
-    background-color: #5522ee;
+    color: #461fbd;
+    background-image: linear-gradient(to right, #4fa4a7, #0f6666);
+    /* background-color: #5522ee; */
 }
 
 .hero-content {
@@ -96,12 +99,13 @@ body {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 30px;
-    color: #333;
+    color: #252432;
     max-width: 800px; /* Still good to limit heading width for readability */
 }
 
 .stay-focused-button {
-    background-color: #6633ff;
+    background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
+    /* background-color: #461fbd; */
     color: white;
     border: none;
     padding: 12px 36px;
@@ -113,7 +117,9 @@ body {
 }
 
 .stay-focused-button:hover {
-    background-color: #5522ee;
+    color: #461fbd;
+    background-image: linear-gradient(to right, #4fa4a7, #0f6666);
+    /* background-color: #5522ee; */
 }
 
 /* For the background pattern */
@@ -160,7 +166,7 @@ body {
 .action-content h2 {
     font-size: 42px;
     font-weight: bold;
-    color: #374151;
+    color: #252432;
     margin-bottom: 24px;
 }
 
@@ -173,7 +179,8 @@ body {
 }
 
 .action-launch-btn {
-    background-color: #7c3aed;
+    background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
+    /* background-color: #461fbd; */
     color: white;
     font-weight: bold;
     padding: 12px 32px;
@@ -186,7 +193,9 @@ body {
 }
 
 .action-launch-btn:hover {
-    background-color: #6d28d9;
+    color: #461fbd;
+    background-image: linear-gradient(to right, #4fa4a7, #0f6666);
+    /* background-color: #6d28d9; */
 }
 
 .action-image-container {
@@ -226,7 +235,7 @@ body {
 .stats-container h2 {
     font-size: 36px;
     font-weight: bold;
-    color: #374151;
+    color: #252432;
     margin-bottom: 40px;
 }
 
@@ -248,7 +257,7 @@ body {
 .stat-item .stat-number {
     font-size: 48px;
     font-weight: bold;
-    color: #7c3aed;
+    color: #461fbd;
     margin-bottom: 8px;
 }
 
@@ -269,7 +278,7 @@ body {
 .reviews-section h2 {
     font-size: 36px;
     font-weight: bold;
-    color: #374151;
+    color: #252432;
     margin-bottom: 64px;
 }
 
@@ -305,7 +314,7 @@ body {
 .review-card h3 {
     font-size: 24px;
     font-weight: bold;
-    color: #374151;
+    color: #252432;
     margin-bottom: 12px;
 }
 
@@ -355,8 +364,9 @@ body {
 }
 
 h1 {
-    font-size: 3em; /* Adjust font size */
-    color: #333;
+    font-weight: bold;
+    font-size: 50px; /* Adjust font size */
+    color: #252432;
     margin-bottom: 15px;
     line-height: 1.2;
 }
@@ -368,19 +378,23 @@ p {
 }
 
 button {
-    background-color: #6f42c1; /* A purple color for the button */
+    background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
+    /* background-color: #461fbd; */
     color: #fff;
     border: none;
     padding: 15px 30px;
     border-radius: 8px;
-    font-size: 1.1em;
+    font-size: 16px;
+    font-weight: 300;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 50px; /* Space between button and image */
 }
 
 button:hover {
-    background-color: #5a36a0; /* Darker shade on hover */
+    color: #461fbd;
+    background-image: linear-gradient(to right, #4fa4a7, #0f6666);
+    /* background-color: #5a36a0; */
 }
 
 .image-wrapper {
@@ -392,8 +406,14 @@ button:hover {
 }
 
 .image-wrapper img {
-    max-width: 100%;
-    height: auto;
+    height: 365px;
+    width: 840px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 261px;
+    margin-bottom: 71px;
+    /* max-width: 100%;
+    height: auto; */
     display: block; /* Remove extra space below image */
     margin: 0 auto; /* Center the image */
     border-radius: 15px; /* Adjust to match the image's rounded corners */
@@ -426,7 +446,7 @@ button:hover {
 .contact-text h2 {
     font-size: 97px;
     font-weight: bold;
-    color: #374151;
+    color: #252432;
     line-height: 1.1;
 }
 
@@ -450,9 +470,9 @@ button:hover {
 
 .form-group label {
     display: block;
-    font-size: 14px;
-    color: #4b5563;
-    font-weight: 500;
+    font-size: 18px;
+    color: #252432;
+    font-weight: 300;
     margin-bottom: 8px;
 }
 
@@ -478,12 +498,13 @@ button:hover {
 }
 
 .contact-submit-btn {
-    background-color: #7c3aed;
+    background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
+    /* background-color: #461fbd; */
     color: white;
-    font-weight: 500;
+    font-weight: bold;
     padding: 16px 32px;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     transition: background-color 0.3s ease;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -492,7 +513,9 @@ button:hover {
 }
 
 .contact-submit-btn:hover {
-    background-color: #6d28d9;
+    color: #461fbd;
+    background-image: linear-gradient(to right, #4fa4a7, #0f6666);
+    /* background-color: #6d28d9; */
 }
 
 /* Footer Section */
@@ -500,7 +523,7 @@ button:hover {
     width: 1440px; /* Fixed width as requested */
     height: 428px; /* Fixed height as requested */
     margin: 0 auto; /* Center the fixed-width footer */
-    background-color: white;
+    background-color: powderblue;
     padding: 80px 0; /* Vertical padding, horizontal handled by max-width and internal padding */
     text-align: center;
     display: flex;
@@ -513,7 +536,7 @@ button:hover {
     margin-right: 100px;
     font-size: 48px;
     font-weight: 900;
-    color: #4A5FF2;
+    color: #461fbd;
     margin-bottom: 32px;
 }
 
@@ -544,5 +567,5 @@ button:hover {
 }
 
 .footer-nav a:hover {
-    color: #7c3aed;
+    color: #461fbd;
 }
