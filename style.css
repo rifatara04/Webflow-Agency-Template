@@ -62,6 +62,7 @@ body {
 }
 
 .signup-button {
+    text-align: center;
     /* margin-right: 150px; No longer needed with navbar padding */
     margin-top: 40px;
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
@@ -224,7 +225,7 @@ body {
 }
 
 .stats-container {
-    background-color: #fff;
+    background-color: powderblue;
     border-radius: 12px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
     padding: 48px;
@@ -375,18 +376,18 @@ p {
     margin-bottom: 30px;
 }
 
+
 button {
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
-    /* background-color: #461fbd; */
     color: #fff;
     border: none;
     padding: 15px 30px;
     border-radius: 8px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: bold; /* Changed from 300 to bold */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 50px; /* Space between button and image */
+    margin-bottom: 50px;
 }
 
 button:hover {
@@ -442,7 +443,7 @@ button:hover {
 }
 
 .contact-text h2 {
-    font-size: 97px;
+    font-size: 60px;
     font-weight: bold;
     color: #252432;
     line-height: 1.1;
@@ -450,6 +451,7 @@ button:hover {
 
 .contact-form-container {
     flex: 1;
+    margin-right: 150px;
     min-width: 300px;
     max-width: 512px;
     background-color: #fff;
@@ -531,7 +533,7 @@ button:hover {
 }
 
 .footer-logo {
-    margin-right: 100px;
+    text-align: center;
     font-size: 48px;
     font-weight: 900;
     color: #461fbd;
@@ -539,7 +541,8 @@ button:hover {
 }
 
 .footer-cta {
-    margin-right: 100px;
+    text-align: center;
+    /* margin-right: 100px; */
     color: #333333;
     line-height: 1.625;
     max-width: 672px;
@@ -550,7 +553,8 @@ button:hover {
 }
 
 .footer-nav {
-    margin-right: 100px;
+    text-align: center;
+    /* margin-right: 100px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
