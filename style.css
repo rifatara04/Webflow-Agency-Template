@@ -66,7 +66,6 @@ body {
     /* margin-right: 150px; No longer needed with navbar padding */
     margin-top: 40px;
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
-    /* background-color: #461fbd; */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -80,7 +79,6 @@ body {
 .signup-button:hover {
     color: #461fbd;
     background-image: linear-gradient(to right, #4fa4a7, #0f6666);
-    /* background-color: #5522ee; */
 }
 
 .hero-content {
@@ -106,7 +104,6 @@ body {
 
 .stay-focused-button {
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
-    /* background-color: #461fbd; */
     color: white;
     border: none;
     padding: 12px 36px;
@@ -120,7 +117,6 @@ body {
 .stay-focused-button:hover {
     color: #461fbd;
     background-image: linear-gradient(to right, #4fa4a7, #0f6666);
-    /* background-color: #5522ee; */
 }
 
 /* For the background pattern */
@@ -139,7 +135,7 @@ body {
     z-index: -1;
 }
 
-/* Call to Action / Demo Section (action.png) */
+/* Action Section */
 .action-section {
     background-color: #f8f8f8;
     padding: 96px 20px; /* Horizontal padding for responsiveness */
@@ -148,7 +144,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    /* width: 1140px; */
     height: 200px;
     margin-right: 141px;
     margin-left: 159px;
@@ -183,7 +178,6 @@ body {
 
 .action-launch-btn {
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
-    /* background-color: #461fbd; */
     color: white;
     font-weight: bold;
     padding: 12px 32px;
@@ -198,7 +192,6 @@ body {
 .action-launch-btn:hover {
     color: #461fbd;
     background-image: linear-gradient(to right, #4fa4a7, #0f6666);
-    /* background-color: #6d28d9; */
 }
 
 .action-image-container {
@@ -219,7 +212,7 @@ body {
     border-radius: 16px;
 }
 
-/* Productive Users Section */
+/* Productive Section */
 .stats-section {
     background-color: #f8f8f8;
     padding: 96px 20px; /* Horizontal padding for responsiveness */
@@ -269,7 +262,7 @@ body {
     color: #4b5563;
 }
 
-/* Testimonials Section (review.png) */
+/* Review Section */
 .reviews-section {
     background-color: #f8f8f8;
     padding: 96px 20px; /* Horizontal padding for responsiveness */
@@ -351,10 +344,7 @@ body {
     color: #4b5563;
 }
 
-
-
 /* Focus Section */
-
 .focus-section {
     background-color: #ffffff;
     border-radius: 20px;
@@ -362,7 +352,6 @@ body {
     text-align: center; /* This centers inline content and text */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     height: 600px;
-    /* width: 1140px; */
     max-width: 900px; /* Adjust as needed */
     width: 100%;
     margin: 30px auto; /* This centers the .focus-section itself */
@@ -381,7 +370,6 @@ p {
     color: #666;
     margin-bottom: 30px;
 }
-
 
 button {
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
@@ -404,15 +392,10 @@ button:hover {
 
 .image-wrapper {
     width: 100%;
-    /* The image itself has a border-radius and shadow in the original design.
-        You might need to apply these to the img tag directly or ensure the image
-        asset itself has these characteristics, or use more advanced CSS.
-        For simplicity, we'll just center it and give it some basic styling. */
 }
 
 .image-wrapper img {
     height: 365px;
-    /* width: 840px; */
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 261px;
@@ -426,7 +409,7 @@ button:hover {
 }
 
 
-/* Contact/Newsletter Section (newsletter.png) */
+/* Newsletter Section */
 .contact-section {
     background-color: #f8f8f8;
     padding: 96px 20px; /* Horizontal padding for responsiveness */
@@ -442,7 +425,6 @@ button:hover {
 .contact-text {
     flex: 1;
     height: 528px;
-    /* width: 323px; */
     min-width: 300px;
     max-width: 700px;
     text-align: left;
@@ -467,7 +449,6 @@ button:hover {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); */
     padding: 40px;
     height: 490px;
-    /* width: 497px; */
 }
 
 .contact-form {
@@ -507,7 +488,6 @@ button:hover {
 
 .contact-submit-btn {
     background-image: linear-gradient(to right, rgb(140, 142, 202), #461fbd);
-    /* background-color: #461fbd; */
     color: white;
     font-weight: bold;
     padding: 16px 32px;
@@ -524,6 +504,7 @@ button:hover {
     color: #461fbd;
     background-image: linear-gradient(to right, #4fa4a7, #0f6666);
 }
+
 
 /* Footer Section */
 .footer-section {
@@ -545,24 +526,20 @@ button:hover {
     font-size: 60px;
     font-weight: 900;
     color: #461fbd;
-    /* margin-bottom: 32px; */
 }
 
 .footer-cta {
     text-align: center;
-    /* margin-right: 100px; */
     color: #333333;
     line-height: 1.625;
     max-width: 672px;
     /* margin: 0 auto 48px auto; */
-    /* Centered with bottom margin */
-    padding: 0 16px; /* Horizontal padding for content within the fixed width */
+    padding: 0 16px;
     font-size: 18px;
 }
 
 .footer-nav {
     text-align: center;
-    /* margin-right: 100px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
